@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 
-const PostController = require('../../controllers/post');
+const PostController = require('../controllers/post');
 
 const checkAuth = require('../middleware/check-auth');
 const extractFile = require('../middleware/file');
