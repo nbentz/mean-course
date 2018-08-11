@@ -15,7 +15,7 @@ const storage = multer.diskStorage({
       error = null;
     }
     //folder route is relative to loc of server.js
-    cb(error, "./backend/images");
+    cb(error, "images");
   },
   filename: (req, file, cb) => {
     const name = file.originalname.toLowerCase().split(' ').join('-');
