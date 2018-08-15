@@ -50,10 +50,10 @@ app.use( (req, res, next) =>{
   next();
 });
 
-app.use("posts/", postsRoutes);
-app.use("user/", userRoutes);
-// app.use("/api/posts/", postsRoutes);
-// app.use("/api/user/", userRoutes);
+// app.use("posts/", postsRoutes);
+// app.use("user/", userRoutes);
+app.use("/api/posts/", postsRoutes);
+app.use("/api/user/", userRoutes);
 //to export app:
 module.exports = app;
 
